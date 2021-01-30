@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/*--------------------------------------------------------------
+# GENERAL
+--------------------------------------------------------------*/
+*   {
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: 0;
+    list-style-type: none;
+    text-decoration: none;
+    }
+
+body {
+    background-color: #141414;
+}
+
+h1.general {
+    -webkit-text-stroke: 1.5px #05c4d3;
+    color: transparent ;
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    margin: 200px 0px 0px 70px;
+    display: flex;
+    }
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: white;
+    margin: 50px 0px 50px 70px;
+    padding-bottom: 50px;
+    }
+
+h3 {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #05c4d3;
+    margin: 15px 0px 0px 70px;
+    }
+
+/*--------------------------------------------------------------
+# NAV
+--------------------------------------------------------------*/
+
+nav div ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background: none;
+    padding: 10px 0px;
+
+    li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold; 
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 75%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+     
+
+    a:hover, a:focus {
+        font-size: 17px;
+        color: #fff;
+        background-size: 100% 2px;
+        
+    } }}
+
+
+@media only screen and (max-width: 600px){
+    a.nav-link.type {
+        font-size: 40px;
+        line-height: 1.5;
+        background-position: 0% 85%;
+        }   
+        
+    a.nav-link.type a:hover, a:focus {
+        color: #fff;
+        background-size: 100% 2px;
+        }
+    }   
+
+
+.expansible {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*--------------------------------------------------------------
+# HOME
+--------------------------------------------------------------*/
+
+.intro {
+        height: 100vh;
+        position: relative;
+        text-align: center;
+      }
+
+div h2.sub-title {
+    margin-left: 0px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    text-align: left;
+    background-image: linear-gradient(45deg,#365899 0%, #05c4d3 35%,blue 85%, violet 100%);
+    -webkit-text-fill-color: transparent;
+    color:#fff;
+    }
+
+div h3.home{
+    margin-left: 0px;
+    padding-left: 10px;
+    margin-top: 20px;
+    text-align: left;
+    }
+
+div p.home{
+    margin-left: 0px;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-align:left;
+    line-height: 40px;
+    }
+
+@media only screen and (max-width: 600px)
+{div p.home,div h3.home,div h2.sub-title {
+    margin-left: 0px;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-align:left;
+    line-height: 40px;
+    width: auto;
+    }
+}
+
+/* Animación de la presentación */
+
+
+h3.animation {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    padding-top: 160px;
+    }
+
+
+div#animation {
+    color: #fff;
+    text-transform: none;
+    font-size: 60px;
+    font-weight:bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display:block;
+    line-height: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+
+#flip {
+    height:100px;
+    overflow:hidden;
+    
+        
+ > div > div {
+    color:#fff;
+    height:120px;
+    padding-left: 6%;
+    padding-right: 6%;
+    display:inline-block;
+    justify-items: center;
+}       
+div:first-child {
+    animation: show 8s linear infinite;
+}
+div div {
+    color:blue;
+}    
+
+div:first-child div {
+    color: #05c4d3;
+}    
+
+div:last-child div {
+    color:#1937bd;
+}}
+        
+@keyframes show {
+    0% {margin-top:-360px;}
+    5% {margin-top:-240px;}
+    33% {margin-top:-240px;}
+    38% {margin-top:-120px;}
+    66% {margin-top:-120px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-360px;}
+    }
+
+
+ /*--------------------------------------------------------------
+# NOSOTROS
+--------------------------------------------------------------*/   
+
+main.nosotros {
+    margin-top: 200px;
+}
+
+ /*--------------------------------------------------------------
+# CLASES - PRACTICA FUNCIÓN IF Y ANIMACIONES CON SASS
+--------------------------------------------------------------*/   
+
+$enfasis: estandar; /*Mi constante serán los textos estandar*/ 
+
+.Link-title2 {
+    @if $enfasis == estandar {
+        font-size: 30px;
+    } @else if $enfasis == sobresaliente {
+        font-size: 20px;
+    } @else  {
+        font-size: 22px
+    }
+}
+
+  .Link {
+    filter: drop-shadow(0 1em 1em rgba( #05c4d3, .16));
+    font-size: 1rem;
+    position: relative;
+    padding-left: 70px;
+    transform: translateZ(0);
+    text-decoration: none;
+  }
+  
+  .Link::before,
+  .Link::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    margin-left: 70px;
+    transform-origin: right;
+    transition: transform 500ms;
+    width: 80%; height: 100%;
+    top: 0; left: 0; 
+    z-index: -1;
+  }
+  
+  .Link::after {
+    background-color:blue;
+    transform: scaleX(0);
+    transition-duration: 450ms;
+
+  }
+  
+  .Link-title {
+
+    background-size: 0 1px, 0 100%;
+    background-position: 8px calc(1em + 8px), 0 0;
+    background-repeat: no-repeat;
+    box-decoration-break: clone;
+    display: inline;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 6px 8px;
+    margin-left: -8px;
+    pointer-events: none;
+    line-height: 1.75; 
+    text-shadow: none;
+    
+  }
+  
+  .Link:hover > .Link-title {
+    background-size: calc(100% - 16px) 2px, 100% 100%;
+    transition-duration: 200ms;
+  }
+  
+  .Link:hover::before {
+    transform: scaleX(0);
+    transition-duration: 450ms;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .Link:hover::after {
+    transform:  scaleX(1);
+    transition-duration: 700ms;
+    transition-timing-function: ease-in-out;
+    transform-origin: left;
+   
+  }
+
+
+/*--------------------------------------------------------------
+# PODCAST - SECCIÓN HECHA CON GRID
+--------------------------------------------------------------*/
+
+body.podcast {
+    background-color: black;
+    
+
+h1{
+    -webkit-text-stroke: 1.5px #05c4d3;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: transparent;
+    margin: 50px 0px 0px 70px;
+    }}
+
+div iframe {
+    margin: 30px 0px 30px 65px;
+    width: 90%;
+    }
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 10% 0% 10%;
+    }
+
+.gridContainer div.rowLeft img {
+    padding: 0px 0px 0px 0px;
+    margin-left: 60px;
+
+    }
+
+.gridContainer div.rowRigth img {
+    padding: 0px 0px 0px 0px;
+    margin-left: 0px;
+    }
+
+div.namesRigth p{
+    -webkit-text-stroke: 1px #fff;
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 2.94px;
+    color: transparent;
+    margin: 0px 0px 0px 300px;
+    width: auto;
+    position: absolute; 
+    }
+
+div.namesLeft p {
+    -webkit-text-stroke: 1px #fff;
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 2.94px;
+    color: transparent;
+    margin: 0px 0px 0px -150px;
+    position: absolute; 
+    width: auto;
+    }
+
+.ft-podcast {
+    background-color: #141414;
+    margin-top: -5px;
+    }
+
+footer.ft-podcast section.ft-legalPodcast {
+    background-color: #141414;
+    padding: 20px 20px;
+    }
+  
+/*--------------------------------------------------------------
+# SHOWS
+--------------------------------------------------------------*/
+
+section.ticket input {
+    margin-left: 70px;
+    margin-top: 30px;
+    padding: 12px 20px;
+    color: #05c4d3;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid white;
+    }
+
+    .impro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 10% 0% 10%;
+    }
+
+
+/*--------------------------------------------------------------
+# CONTACTO
+--------------------------------------------------------------*/
+
+section.content-section2,
+section.presentation{
+    padding-top: 150px;
+
+}
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+section .ft-main{
+    display: flex;
+    padding: 0px;
+    justify-content: right;
+    }
+
+footer {
+    padding-top: 20px;
+    margin-top: 60px;
+    background-color: black;
+    color: #bbb;
+    line-height: 2;
+    }
+    
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:unset;
+
+    }
+
+footer section div.column{
+    display: flex;
+    flex-grow: 2;  
+    margin-top: 30px; 
+    line-height: 2.5;
+    }
+
+footer section div.column1{
+    display: flex;
+    flex-grow: 0;
+    margin-left: auto;
+    }
+
+footer section div.column1 ul li {
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+
+    }
+
+footer section div.column1 ul li h4.ft-title{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 40px;
+    }
+    
+footer section div.column1 ul li p.title{
+    display: flex;
+    margin-left: 0px;
+    margin-right: -300px; }
+
+footer input {
+    margin-left: 0px;
+    margin-top: 30px;
+    padding: 12px 20px;
+    color: #05c4d3;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid white;
+    }
+
+footer a {
+    color: #bbb;
+    }
+
+a:hover {
+    color: #05c4d3;
+    }
+        
+.ft-main {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+        
+.ft-legal {
+    display: flex;
+    justify-content: right;
+    padding: 20px 20px;
+    background-color: black;
+    }
