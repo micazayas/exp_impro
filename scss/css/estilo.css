@@ -179,42 +179,6 @@ div#animation {
   100% {
     margin-top: -360px; } }
 
-@media only screen and (max-width: 600px) {
-  h3.animation {
-    margin: 0px 0px 30px 0px;
-    text-align: center;
-    padding-top: 160px;
-    font-size: 6vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    font-weight: 300;
-    letter-spacing: -.1vw;
-    color: #05c4d3;
-    line-height: 110%; }
-  div#animation {
-    color: #ffffff;
-    text-transform: none;
-    font-size: 5vh;
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    height: 100vh;
-    width: auto;
-    letter-spacing: -.1vw;
-    justify-items: center;
-    align-content: center;
-    align-items: center; } }
-
-@media only screen and (max-width: 768px) {
-  h3.animation {
-    margin: 0px 0px 30px 0px;
-    padding-top: 160px;
-    font-size: 4vw; }
-  div#animation {
-    font-size: 9vh;
-    height: 80vh;
-    line-height: 110%; } }
-
 /*-Animation Section Shows - Integrantes-*/
 .integrantes {
   position: relative;
@@ -586,7 +550,43 @@ section.content-section img.img-fluid {
     padding-left: 0%;
     margin-top: 10%; }
   div h3.animation {
-    width: 100%; } }
+    width: 100%; }
+  h3.animation {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+    padding-top: 160px;
+    font-size: 6vw;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    font-weight: 300;
+    letter-spacing: -.1vw;
+    color: #05c4d3;
+    line-height: 150%; }
+  div#animation {
+    color: #ffffff;
+    text-transform: none;
+    font-size: 9vh;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    height: 100vh;
+    width: auto;
+    letter-spacing: -.1vw;
+    justify-items: center;
+    align-content: center;
+    align-items: center; } }
+
+@media only screen and (max-width: 768px) {
+  h3.animation {
+    margin: 0px 0px 30px 0px;
+    padding-top: 200px;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    font-size: 6vw; }
+  div#animation {
+    font-size: 9vh;
+    height: 100vh;
+    line-height: 110%; } }
 
 /*--------------------------------------------------------------
 # CLASES
@@ -791,7 +791,8 @@ div.social-media img.icon {
   margin-bottom: 20px; }
 
 label {
-  margin-left: 30px; }
+  margin-left: 30px;
+  color: white; }
 
 /* Estilo para casilla de input texto, mail y botones*/
 input[type=text], select, textarea {
@@ -806,6 +807,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
   font-weight: 600;
+  color: white;
   background-color: transparent; }
 
 input[type=email], select, textarea {
@@ -816,7 +818,7 @@ input[type=email], select, textarea {
   margin-left: 30px;
   resize: vertical;
   font-weight: 600;
-  color: black;
+  color: white;
   background-color: transparent;
   border-bottom-color: #05c4d3;
   border-top-color: transparent;
