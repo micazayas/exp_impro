@@ -8,13 +8,13 @@
         <meta name="description" content="Escuchanos en la Paeya Podcast, un podcast improvisado al mejor estilo radioteatro."/>
         <link rel="icon" href="multimedia/ei.png">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="scss/css/estilo.css">
     </head>
-    <body class="podcast">
+    <body>
         <!-- Acá empieza el encabezado que se mantendrá en todas las secciones de la web, será el menú -->
         <header>
           <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="index.html"><img src="multimedia/logoein.png"></a>
+            <a class="navbar-brand" href="index.html"><img src="multimedia/logoein.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,7 +46,7 @@
   <!-- Acá termina el encabezado que se mantendrá en todas las secciones de la web -->
 
   <main>
-          <h2 class="h1-style">#La paeya podcast</h2>
+          <h1>#La paeya podcast</h1>
               <h2>radioteatro del bueno</h2>
                   <div>
                       <p> 
@@ -57,33 +57,34 @@
                       totalmente improvisadas.
                       </p>
                       <h3>ESCUCHA ACÁ</h3>
-                      <p>el último episodio</p>
+                      <p class="podcast">►► el último episodio</p>
                   </div>  
                   <div><iframe src="https://open.spotify.com/embed-podcast/show/2qiEe52INU2Pq8mgnIfTcD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><div>
        
                       <!--LA SIGUIENTE SECCIÓN SE HIZO CON GRID 	↓	↓	↓	↓ -->
          
           <section> 
-              <H2 class="h1-style-subtitles">Las voces de la paeya</H2>
+              <H2 class="h1-style">Las voces de la paeya</H2>
                   <div class="gridContainer">   
-                      <div class="rowLeft"><img class="img-fluid" src="multimedia/sandra.png" alt=""></div>
+                      <div class="rowLeft"><img class="img-fluid" src="multimedia/sandra.png" alt="Sandra"></div>
                       <div class="namesLeft"><p>Sandra</p></div>
                       <div class="namesRigth"><p>Mati</p></div>
-                      <div class="rowRigth"><img class="img-fluid" src="multimedia/mati.png" alt=""></div>
-                      <div class="rowLeft"><img  class="img-fluid"src="multimedia/miquel.png" alt=""></div>
-                      <div class="namesLeft"><p>Miquel</p></div></div>
+                      <div class="rowRigth"><img class="img-fluid" src="multimedia/mati.png" alt="Mati"></div>
+                      <div class="rowLeft"><img  class="img-fluid"src="multimedia/miquel.png" alt="Grego"></div>
+                      <div class="namesLeft"><p>Grego</p></div></div>
           </section>
         </main>
-        <footer class="ft-podcast">
+        <!--footer section-->
+        <footer>
             <section class="ft-main">
-                <div class="column1">
+              <div class="ft-column">
                     <ul>                
                         <li><h4 class="ft-title">¿Te ayudamos?</h4></li>
                         <li><p class="title">Comunicate con nosotros ante cualquier duda o sugerencia, todas las opiniones nos permiten mejorar.</p></li>
-                        <li><input type="submit" value="Contactanos" ></li>
+                        <a href="section_contacto.html">Contactanos</a>
                     </ul>  
                 </div>
-                <div class="column">
+                <div class="info-column">
                     <ul>
                         <li>Calle Falsa 123</li>
                         <li>Múnich-Alemania</li>
@@ -91,7 +92,7 @@
                         <li>experienciaimpro@gmail.com</li>
                       </ul>
                 </div>
-                <div class="column">
+                <div class="info-column">
                   <ul>
                     <li><a href="section_nosotros.html">Nosotros</a></li>
                     <li><a href="section_clases.html">Clases</a></li>
@@ -99,7 +100,7 @@
                     <li><a href="section_shows.html">Shows</a></li>
                   </ul>
                 </div>
-                <div class="column">
+                <div class="info-column">
                     <ul>
                     <li><a href="https://www.facebook.com/impro.experiencia">Facebook</a></li>
                     <li><a href="https://www.instagram.com/experienciaimpro/">Instagram</a></li>
@@ -107,7 +108,7 @@
                     </ul>
                 </div>
             </section> 
-            <section class="ft-legalPodcast">
+            <section class="ft-legal">
                 <ul>
                   <li>&copy; 2020 Copyright Micaela Zayas.</li>
                 </ul>

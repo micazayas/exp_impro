@@ -8,14 +8,14 @@
         <meta name="description" content="No dudes en contactarnos si estás interesado en tomas clases de improvisación."/>
         <link rel="icon" href="multimedia/ei.png">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="scss/css/estilo.css">
         
     </head>
 
-    <body class="contact-body">
+    <body>
       <header>
           <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="index.html"><img src="multimedia/logoein.png"></a>
+            <a class="navbar-brand" href="index.html"><img src="multimedia/logoein.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,101 +47,87 @@
 
       <!-- Acá termina el encabezado que se mantendrá en todas las secciones de la web-->
 
-      <main>
-        <h2 class="h1-style">Contactanos</h2>
-        <div class="container contact">
+    <main class="contact">
+      <h1>Contactanos</h1>
+        <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <div class="contact-info">
-                <h2>¿En qué podemos ayudarte?</h2>
-                <p>WhatsApp:</p>
-                <p class="contact-item">+49 1222343424</p>
-                <p>Clases y talleres:</p>
-                <p class="contact-item">experienciaimpro@gmail.com</p>
-                <p>Podcast:</p>
-                <p class="contact-item">lapaeyapodcast@gmail</p>
-                <div class="socialMedia">
-                  <img src="multimedia/spotify.png ">
-                  <img src="multimedia/instagram.png ">
-                  <img src="multimedia/facebook.png ">
+            <div class="column">
+              <h2 class="h2-contact">¿En qué podemos ayudarte?</h2>
+                <p class="contact-title">WhatsApp</p>
+                <p class="contact-items">+49 1222343424</p>
+                <p class="contact-title">Clases:</p>
+                <p class="contact-items">experienciaimpro@gmail.com</p>
+                <p class="contact-title">Podcast:</p>
+                <p class="contact-items">lapaeyapodcast@gmail</p>
+                <div class="social-media">
+                  <a href="https://www.facebook.com/impro.experiencia" target="_blank"><img class="icon" src="multimedia/facebook.png" alt="facebook" ></a>
+                  <a href="https://www.instagram.com/experienciaimpro" target="_blank"><img class="icon" src="multimedia/instagram.png" alt="instagram" ></a>
+                  <a href="https://open.spotify.com/show/2qiEe52INU2Pq8mgnIfTcD?si=jB5_Mcb-QCCymiXCkWUeNg" target="_blank"><img class="icon" src="multimedia/spotify.png" alt="spotify" ></a>
                 </div>
-              </div>
             </div>
-            <div class="col-md-8">
-              <div class="contact-form">
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="fname">Nombre</label>
-                  <div class="col-sm-10">          
-                  <input type="text" class="form-control" id="fname" placeholder="Nombre" name="fname">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="lname">Apellido</label>
-                  <div class="col-sm-10">          
-                  <input type="text" class="form-control" id="lname" placeholder="Apellido" name="lname">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="email">E-mail</label>
-                  <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="comment">Mensaje</label>
-                  <div class="col-sm-10">
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                  </div>
-                </div>
-                <div class="form-group">        
-                  <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit">Enviar</button>
-                  </div>
-                </div>
-              </div>
+      
+            <div class="column">
+              <form action="/action_page.php">
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="firstname" placeholder="Nombre" required>
+                <label for="lname">Apellido</label>
+                <input type="text" id="lname" name="lastname" placeholder="Apellido" required>
+                <label for="subject">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="subject">Mensaje</label>
+                <textarea id="subject" name="subject" placeholder="Dejanos tu mensaje" style="height:170px" required></textarea>
+                <input type="submit" value="Enviar" >
+              </form>
             </div>
           </div>
         </div>
+
+
+
         </main>
-          <footer>
-            <section class="ft-main">
-                <div class="column1">
-                    <ul>                
-                        <li><h4 class="ft-title">¿Te ayudamos?</h4></li>
-                        <li><p class="title">Comunicate con nosotros ante cualquier duda o sugerencia, todas las opiniones nos permiten mejorar día a día.</p></li>
-                        <li><input type="submit" value="Contactanos" ></li>
-                    </ul>  
-                </div>
-                <div class="column">
-                    <ul>
-                        <li>Calle Falsa 123</li>
-                        <li>Múnich-Alemania</li>
-                        <li>+54 1131061205</li>
-                        <li>experienciaimpro@gmail.com</li>
-                      </ul>
-                </div>
-                <div class="column">
-                  <ul>
-                    <li><a href="section_nosotros.html">Nosotros</a></li>
-                    <li><a href="section_clases.html">Clases</a></li>
-                    <li><a href="section_podcast.html">Podcast</a></li>
-                    <li><a href="section_shows.html">Shows</a></li>
-                  </ul>
-                </div>
-                <div class="column">
-                    <ul>
-                    <li><a href="https://www.facebook.com/impro.experiencia" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/experienciaimpro/" target="_blank">Instagram</a></li>
-                    <li><a href="https://open.spotify.com/show/2qiEe52INU2Pq8mgnIfTcD?si=jB5_Mcb-QCCymiXCkWUeNg" target="_blank">Spotify</a></li>
-                    </ul>
-                </div>
-            </section> 
-            <section class="ft-legal">
+
+
+      <!--footer section-->
+      <footer>
+        <section class="ft-main">
+            <div class="ft-column">
+                <ul>                
+                    <li><h4 class="ft-title">¿Te ayudamos?</h4></li>
+                    <li><p class="title">Comunicate con nosotros ante cualquier duda o sugerencia, todas las opiniones nos permiten mejorar día a día.</p></li>
+                    <a href="section_contacto.html">Contactanos</a>
+                </ul>  
+            </div>
+            <div class="info-column">
                 <ul>
-                  <li>&copy; 2020 Copyright Micaela Zayas.</li>
+                    <li>Calle Falsa 123</li>
+                    <li>Múnich-Alemania</li>
+                    <li>+54 1131061205</li>
+                    <li>experienciaimpro@gmail.com</li>
+                  </ul>
+            </div>
+            <div class="info-column">
+              <ul>
+                <li><a href="section_nosotros.html">Nosotros</a></li>
+                <li><a href="section_clases.html">Clases</a></li>
+                <li><a href="section_podcast.html">Podcast</a></li>
+                <li><a href="section_shows.html">Shows</a></li>
+              </ul>
+            </div>
+            <div class="info-column">
+                <ul>
+                <li><a href="https://www.facebook.com/impro.experiencia" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/experienciaimpro/" target="_blank">Instagram</a></li>
+                <li><a href="https://open.spotify.com/show/2qiEe52INU2Pq8mgnIfTcD?si=jB5_Mcb-QCCymiXCkWUeNg" target="_blank">Spotify</a></li>
                 </ul>
-            </section>
-        </footer>
+            </div>
+        </section> 
+        <section class="ft-legal">
+            <ul>
+              <li>&copy; 2020 Copyright Micaela Zayas.</li>
+            </ul>
+        </section>
+    </footer>
+
 		<!-- jquery -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<!-- bootstrap javascript -->

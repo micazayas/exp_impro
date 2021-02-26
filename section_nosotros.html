@@ -8,13 +8,13 @@
         <meta name="description" content="Experiencia Impro ,la primer Escuela de Improvisación para hispanohablantes en Múnich."/>
         <link rel="icon" href="multimedia/ei.png">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="scss/css/estilo.css">
     </head>
     <body>
-        <!-- Acá empieza el encabezado que se mantendrá en todas las secciones de la web, será el menú -->
+        <!--Nav section-->
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-              <a class="navbar-brand" href="index.html"><img src="multimedia/logoein.png"></a>
+              <a class="navbar-brand" href="index.html"><img src="multimedia/logoein.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -43,13 +43,13 @@
               </div>
             </nav>
           </header>
-        <!-- Acá termina el encabezado que se mantendrá en todas las secciones de la web -->
+          <!-- Ending nav section-->
 
         <main>
-          <section class="content-section">
-              <div class="container-fluid">
+          <!--Animation intro-->
+          <section class="content-section-animation">
               <div id=animation>
-                    <div><h3 class="animation">Escuela de improvisación teatral</h3></div>
+                    <div><h3 class="animation">Escuela de improvisación teatral en Múnich</h3></div>
                     <div>Hacemos</div>
                           <div id=flip>
                               <div><div>impro</div></div>
@@ -57,17 +57,16 @@
                               <div><div>teatro</div></div>
                           </div>
                     <div>en español</div>
-                  </div>
                 </div>
           </section>
-
-          <section class="content-section">
+          <!--Ending animation intro--> 
+          <section >
             <div class="container-fluid">
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 bio-card">
-                    <div class="col text-center"><img class="img-fluid" src="multimedia/Argentina.png"></div>
-                    <div class="col bio-card__column2">
+                    <div class="col text-center"><img class="img-fluid" src="multimedia/Argentina.png" width="80%" alt="origenes"></div>
+                    <div class="col bio-card_column">
                       <h3 class="nosotros">SOMOS DE</h3>
-                      <h2 class="nosotros">Bs.As-Argentina</h2>
+                      <h2 class="nosotros">Buenos Aires-Argentina</h2>
                       <h3 class="nosotros">ESTAMOS EN</h3>
                       <h2 class="nosotros">Múnich-Alemania</h2>
                       <h3 class="nosotros">ENSEÑAMOS IMPROVISACIÓN</h3>
@@ -79,13 +78,12 @@
                         únicas son: la conexión entre los miembros del grupo,
                         técnicas lúdicas y por supuesto, el público.</p>
                     </div>
-                </div>
               </section>               
               <section class="content-section">
                 <h3>EN EL 2018</h3>
                 <h2>Todo empezaba</h2>
-                    <p>
-                    Si bien somos oriundos de Buenos Aires, durante el año 2018 vivimos una temporada en el sur de Argentina.
+                    <p class=about-us>
+                    Hola! Somos Mica y Mati, nos encanta la comedia, el teatro y enseñar. Si bien somos oriundos de Buenos Aires, durante el año 2018 vivimos una temporada en el sur de Argentina.
                     Durante ese tiempo queriamos seguir estudiando improvisación, pero nos encontramos con una limitante,
                     en el lugar en dónde estabamos viviendo la oferta de clases era casi nula.
                     Entonces se nos ocurrió la idea de dejar de ser alumnos y comenzar a enseñar comedia improvisada.
@@ -97,45 +95,46 @@
              </section>               
 
         </main>        
-        <footer>
-            <section class="ft-main">
-                <div class="column1">
-                    <ul>                
-                        <li><h4 class="ft-title">¿Te ayudamos?</h4></li>
-                        <li><p class="title">Comunicate con nosotros ante cualquier duda o sugerencia, todas las opiniones nos permiten mejorar.</p></li>
-                        <li><input type="submit" value="Contactanos" ></li>
-                    </ul>  
-                </div>
-                <div class="column">
-                    <ul>
-                        <li>Calle Falsa 123</li>
-                        <li>Múnich-Alemania</li>
-                        <li>+54 1131061205</li>
-                        <li>experienciaimpro@gmail.com</li>
-                      </ul>
-                </div>
-                <div class="column">
-                  <ul>
-                    <li><a href="section_nosotros.html">Nosotros</a></li>
-                    <li><a href="section_clases.html">Clases</a></li>
-                    <li><a href="section_podcast.html">Podcast</a></li>
-                    <li><a href="section_shows.html">Shows</a></li>
-                  </ul>
-                </div>
-                <div class="column">
-                    <ul>
-                    <li><a href="https://www.facebook.com/impro.experiencia">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/experienciaimpro/">Instagram</a></li>
-                    <li><a href="https://open.spotify.com/show/2qiEe52INU2Pq8mgnIfTcD?si=jB5_Mcb-QCCymiXCkWUeNg">Spotify</a></li>
-                    </ul>
-                </div>
-            </section> 
-            <section class="ft-legal">
+      <!--footer section-->
+      <footer>
+        <section class="ft-main">
+            <div class="ft-column">
+                <ul>                
+                    <li><h4 class="ft-title">¿Te ayudamos?</h4></li>
+                    <li><p class="title">Comunicate con nosotros ante cualquier duda o sugerencia, todas las opiniones nos permiten mejorar día a día.</p></li>
+                    <a href="section_contacto.html">Contactanos</a>
+                </ul>  
+            </div>
+            <div class="info-column">
                 <ul>
-                  <li>&copy; 2020 Copyright Micaela Zayas.</li>
+                    <li>Calle Falsa 123</li>
+                    <li>Múnich-Alemania</li>
+                    <li>+54 1131061205</li>
+                    <li>experienciaimpro@gmail.com</li>
+                  </ul>
+            </div>
+            <div class="info-column">
+              <ul>
+                <li><a href="section_nosotros.html">Nosotros</a></li>
+                <li><a href="section_clases.html">Clases</a></li>
+                <li><a href="section_podcast.html">Podcast</a></li>
+                <li><a href="section_shows.html">Shows</a></li>
+              </ul>
+            </div>
+            <div class="info-column">
+                <ul>
+                <li><a href="https://www.facebook.com/impro.experiencia" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/experienciaimpro/" target="_blank">Instagram</a></li>
+                <li><a href="https://open.spotify.com/show/2qiEe52INU2Pq8mgnIfTcD?si=jB5_Mcb-QCCymiXCkWUeNg" target="_blank">Spotify</a></li>
                 </ul>
-            </section>
-        </footer>
+            </div>
+        </section> 
+        <section class="ft-legal">
+            <ul>
+              <li>&copy; 2020 Copyright Micaela Zayas.</li>
+            </ul>
+        </section>
+    </footer>
 		<!-- jquery -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<!-- bootstrap javascript -->
